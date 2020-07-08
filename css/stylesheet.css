@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*, *::before, *::after{box-sizing: border-box;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1{margin: 20px 0 40px 0}
+#menu-wrapper{    
+    width: 85%;
+    margin: auto;
+}
+section{
+    border: 2px solid black;
+    background-color: #ccc;
+    margin: 1%;
+    float: left;    
+}
+h2{
+    margin: 0;
+    padding: 0 40px;
+    float: right;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#chicken{
+    background-color: #ffa987;
+}
+#beef{    
+    background-color: #bf2e2e;
+    color: white;
+}
+#sushi{
+    background-color: #ffe25e;
+}
+p{    
+    padding: 30px 30px 0;
+    text-align: left;
+}
+
+/* desktop mq */
+@media (min-width: 992px){    
+  section{
+      width: 31%;      
+    }
+}
+
+/* tablet mq */
+@media (min-width:768px) and (max-width: 991px){
+  section{
+      width: 48%;
+    }
+    #sushi-wrapper{
+        width: 98%;
+    }
+}
+
+/* mobile media query not necessary */
